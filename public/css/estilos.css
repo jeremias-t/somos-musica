@@ -1,0 +1,137 @@
+:root {
+	--rojo: #E50914;
+	--fondo: #141414;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #202d4a;
+  }
+  
+  .contenedor-principal {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/img/pexels-mike-bird-114820\ \(1\).jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 70vh;
+  }
+
+
+  .contenedor-header{
+	background-color: #1b263f;
+	text-align: center;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-evenly;
+	display: flex;
+	padding: .60rem;
+	margin-top: 0;
+  }
+  
+  .contenedor {
+	text-align: center;
+	padding: 20px;
+	
+  }
+  
+  .titulo {
+	font-size: 4rem;
+	color: #ffffff;
+	font-weight: 900;
+  }
+  
+  .descripcion {
+	font-size: 1rem;
+	color: #dedede;
+  }
+  
+  .reproductor {
+	margin-left: 20px;
+  }
+  
+  video {
+	max-width: 100%;
+	width: 900px;
+	height: auto;
+	border: 1px solid #ddd; /* Añadir un borde para mayor claridad */
+	border-radius: 4px; /* Redondear las esquinas del reproductor */
+  }
+  
+
+
+
+
+header {
+	padding: 22px 0;
+}
+
+header .contenedor {
+	display: flex;
+	
+	align-items: center;
+}
+
+header .logotipo {
+	height: auto;
+	width: 200px;
+	padding: 0;
+	
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.contenedor-principal {
+		font-size: 14px;
+	}
+
+	.contenedor-principal .descripcion {
+		max-width: 100%;
+	}
+}
